@@ -1,6 +1,9 @@
 import os
 import sys
 def update():
+  print("Updating host OS packages, please enter sudo password if needed...")
+  os.system("sudo apt update")
+  os.system("sudo apt upgrade")
   print("Welcome to the Docker update script! Type the directory name of the container that you want to update, exactly as it shows. (Run ls in this directory if you're not sure and hit control and c at any time to stop this script.)")
   target = input()
 # if target in ["all"]:
