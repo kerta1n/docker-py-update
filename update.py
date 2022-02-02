@@ -1,7 +1,7 @@
 import os
 import sys
 def update():
-  print("Welcome to the Docker update script! This script updates system packages in order to ensure proper container updates. Press space to update system packages. Press control and c to stop.")
+  print("Welcome to the Docker update script! This script updates system packages in order to ensure proper container updates. Press enter to update system packages. Press control and c to stop.")
   i = input()
   print("Updating host OS packages, please enter sudo password if needed...")
   os.system("sudo apt update")
