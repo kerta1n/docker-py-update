@@ -1,7 +1,6 @@
 # docker-py-update
 #!/bin/kerta1n
 
-An extremely simple python script to update Docker compose-d containers
 A script I made to update my (and you can too) docker containers. I run debian 11, with the following being how I store files and how this script is intended to work:
 
 `~/docker` holds everything docker container'ed
