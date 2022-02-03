@@ -10,7 +10,7 @@ def update():
   os.system("sudo apt remove --purge --autoremove") 
   print("Type the directory name of the container that you want to update, exactly as it shows. (Run ls in this directory if you're not sure and hit control and c at any time to stop this script.)")
   target = input()
-  os.system("cd ~/docker/" + target + "/")
+  os.system("cd ~/docker/" + target)
   os.system("sudo screen docker compose down --rmi all")
   os.system("docker compose up -d --force-recreate")
   os.system("cd")
