@@ -16,5 +16,5 @@ def update():
   if done in ["restart"]:
     update()
   elif done in ["exit"]:
-    sys.exit("run 'python3 update.py' to update another container, bye for now")
+    sys.exit("Run 'python3 update.py' to update another container, bye for now")
 update()
