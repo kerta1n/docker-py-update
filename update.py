@@ -11,7 +11,7 @@ def update():
   print("Type the directory name of the container that you want to update, exactly as it shows. (Run ls in this directory if you're not sure and hit control and c at any time to stop this script.)")
   target = input()
   os.system("docker compose -f ~/docker/" + target + "/docker-compose.yml up -d --force-recreate")
-  print("Would you like to exit, or restart the script? Type your choice exactly as written. ")
+  print("Would you like to exit, or restart the script? Type your choice exactly as written. Leave blank and hit enter to cancel. ")
   done = input()
   if done in ["restart"]:
     update()
