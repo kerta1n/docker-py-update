@@ -1,5 +1,4 @@
 import os
-import sys
 def update():
   print("Welcome to the Docker update script! This script updates system packages in order to ensure proper container updates. Press enter to update system packages. Press control and c to stop.")
   i = input()
@@ -19,5 +18,6 @@ def update():
   if done in ["restart"]:
     update()
   elif done in ["exit"]:
-    sys.exit("Run 'python3 update.py' to update another container, bye for now")
+    print("Run 'python3 update.py' to update another container, bye for now")
+    break
 update()
